@@ -1,0 +1,156 @@
+:root{
+    --main-color: #036a38;
+}
+.material-symbols {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+main{
+    padding: 20px;
+}
+h1,h2{
+text-align: center;
+}
+h1{
+    font-family:"Comforter Brush",cursive ;
+    color: var(--main-color);
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px -1px #ccc;
+
+}
+ul li a.active,
+ul li a:hover
+{
+    background: var(--main-color);
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.menu .item{
+    width: 300px;
+    background: linear-gradient(45deg,#be35e8,#46bfd5,#f6f4f2,#c2e74c);
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px -5px #ccc;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+.menu .item .foto{
+    height: 370px;
+    margin-bottom: 10px;
+}
+.menu .item .foto img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    
+}
+.menu .item .keterangan{
+    color: #ccc;
+}
+.menu .item .nama{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.menu .harga .merah{
+    color: red;
+}
+.menu .harga .coret{
+    text-decoration: line-through;
+}
+.menu .item nav{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 25px;
+    width: 100%;
+   display: none;
+   justify-content: center;
+}
+.menu .item nav span{
+    color: black;
+}
+.menu .item nav a{
+    background: #efefef;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+}
+.menu .item nav a.active,
+.menu .item nav a:hover
+ {
+    background: var(--main-color);
+}
+.menu .item nav a.active span,
+.menu .item nav a:hover span{
+    color: white;
+}
+.menu .badge{
+    position: absolute;
+    background: red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 2;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
+.menu .item:hover nav{
+    display: flex;
+}
