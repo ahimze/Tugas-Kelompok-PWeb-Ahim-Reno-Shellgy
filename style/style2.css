@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    padding: 4rem 0 2rem;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: #fff;
+    --primary: #d6a320;
+    --background-color: #2c2b27;
+    --gray: #808080;
+    --border-color: #5d5c5aff;
+    
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.0rem 0.5rem;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    height: 9%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #fe6f09;
+    transition: color 0.4s;
+    font-size: 2.5rem;
+  }
+  
+  .navbar .navbar-nav a {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 3rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-tambahan a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-tambahan a:hover {
+    color: var(--primary);
+  }
+main{
+    padding: 70px 0;
+}
+h1,h2{
+text-align: center;
+}
+h1{
+    font-family:"Comforter Brush",cursive ;
+    color: #fe6f09;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a{
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px -1px #ccc;
+
+}
+ul li a.active,
+ul li a:hover
+{
+    background: #fe6f09;
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.menu .item{
+    height: 500px;
+    width: 310px;
+    background: #2c2b27;
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 11px -5px #fe6f09;
+    padding: 20px;
+    margin: 50px 20px;
+    position: relative;
+}
+.menu .item .foto{
+    height: 370px;
+    margin-bottom: 10px;
+}
+.menu .item .foto img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    
+}
+.menu .item .keterangan{
+    color: #ccc;
+}
+.menu .item .nama{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.menu .harga .merah{
+    color: red;
+}
+.menu .harga .coret{
+    text-decoration: line-through;
+}
+.menu .item nav{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 25px;
+    width: 100%;
+   display: none;
+   justify-content: center;
+}
+.menu .item nav span{
+    color: black;
+}
+.menu .item nav a{
+    background: #efefef;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+}
+.menu .item nav a.active,
+.menu .item nav a:hover
+ {
+    background: #fe6f09;
+}
+.menu .item nav a.active span,
+.menu .item nav a:hover span{
+    color: white;
+}
+.menu .badge{
+    position: absolute;
+    background: red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 2;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
+.menu .item:hover nav{
+    display: flex;
+}
