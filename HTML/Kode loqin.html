@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toko Sepeda Bekas Online</title>
+    <link rel="stylesheet" href="../Css/Index.css">
+    <!-- Link to Ionicons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="input-container">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="forget">
+                <label for="rememberMe"> <input type="checkbox" id="rememberMe"> Remember Me</label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Script to load Ionicons -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JavaScript to handle Remember Me functionality and redirect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const rememberMeCheckbox = document.getElementById('rememberMe');
+
+            // Check if user data is stored in localStorage
+            if (localStorage.getItem('rememberMe') === 'true') {
+                usernameInput.value = localStorage.getItem('username');
+                passwordInput.value = localStorage.getItem('password');
+                rememberMeCheckbox.checked = true;
+            }
+
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form from submitting the default way
+
+                // Save user data if Remember Me is checked
+                if (rememberMeCheckbox.checked) {
+                    localStorage.setItem('username', usernameInput.value);
+                    localStorage.setItem('password', passwordInput.value);
+                    localStorage.setItem('rememberMe', 'true');
+                } else {
+                    localStorage.removeItem('username');
+                    localStorage.removeItem('password');
+                    localStorage.removeItem('rememberMe');
+                }
+
+                // Simulate a successful login
+                alert('Login successful! Redirecting to the main page...');
+                window.location.href = 'main.html'; // Redirect to the main page
+            });
+        });
+    </script>
+</body>
+
+</html>
