@@ -31,18 +31,14 @@
         <a href="file:///C:/Users/asus/Documents/VSCODE/project%20web/SEPEDA%20BEKAS%20UAD/about_us.html">ABOUT US</a>
         <a href="https://www.example.com/login" style="position: relative; color: #ffffff; text-decoration: none; display: inline-block; padding: 0 10px;">
         <?php
-  session_start(); // Mulai sesi PHP (pastikan dijalankan di awal halaman)
-
-  // Baca nama pengguna dari file user.txt
-  $username = file_get_contents('user.txt');
-
-  // Periksa apakah user.txt kosong atau tidak ada
-  if (empty($username)) {
-    echo "LOGIN"; // Tampilkan "LOGIN" jika file kosong atau tidak ada nama pengguna
-  } else {
-    echo htmlspecialchars($username); // Tampilkan nama pengguna dengan aman
-  }
-  ?>
+             session_start(); 
+            $username = file_get_contents('user.txt');
+            if (empty($username)) {
+              echo "LOGIN";
+            } else {
+              echo htmlspecialchars($username);
+           }
+        ?>
           <span style="position: absolute; top: 0%; width: 2px; height: 20px; background-color: #ffffff; left: -10px;"></span>
           <span style="position: absolute; top: 0%; width: 2px; height: 20px; background-color: #ffffff; right: -10px;"></span>
         </a>
