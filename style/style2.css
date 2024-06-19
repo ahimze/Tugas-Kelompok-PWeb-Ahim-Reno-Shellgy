@@ -113,24 +113,37 @@ ul li a:hover
     background: #fe6f09;
     color: white;
 }
+.label{
+  font-size: 100px;
+  font-family:"Comforter Brush",cursive ;
+  color: #fe6f09;
+  padding-left: 75px;
+  padding-top: 50px;
+  margin-bottom: -50px;
+  
+}
 .menu{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 .menu .item{
     height: 500px;
     width: 310px;
-    background: #2c2b27;
+    background: #393938;
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
     border: 1px solid #ffff;
     border-radius: 5px;
-    box-shadow: 2px 2px 11px -5px #fe6f09;
+    box-shadow: 2px 2px 11px -5px #ffffff;
     padding: 20px;
     margin: 50px 20px;
     position: relative;
+}
+.menu .item:hover {
+  transform: translateY(-5px);
 }
 .menu .item .foto{
     height: 370px;
@@ -141,6 +154,59 @@ ul li a:hover
     height: 370px;
     object-fit: cover;
     
+}
+.menu .foto img.zoom {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+.zoom-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.zoom-overlay.active {
+  display: flex;
+}
+
+/* Tombol zoom */
+.zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.zoom .zoom-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.zoom .zoom-button:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 .menu .item .keterangan{
     color: #ccc;
@@ -184,7 +250,7 @@ ul li a:hover
 .menu .item nav a:hover span{
     color: white;
 }
-.menu .badge{
+.badge{
     position: absolute;
     background: red;
     padding: 5px 15px;
@@ -197,4 +263,79 @@ ul li a:hover
 }
 .menu .item:hover nav{
     display: flex;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  align-items: left;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #666;
+  padding-top: 10px;
+  font-size: 0.9rem;
+}
+.social-icons {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  display: block;
+}
+.social-icons a i {
+  background: linear-gradient(45deg, red, orange, yellow, violet, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icons a:hover {
+  color: #4CAF50;
 }
