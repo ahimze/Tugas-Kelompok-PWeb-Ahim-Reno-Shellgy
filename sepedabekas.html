@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEPEDA BEKAS UAD</title>
@@ -24,15 +25,15 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
     <link rel="stylesheet" href="style/style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-BJpbczV5TbokpNzKv3eD/xhKx4iZNKEj1yJbQckqE3qRg/9bg5ib9pr6D7kksft2" crossorigin="anonymous">
   </head>
   <body>
     <div class="navbar">
       <a href="#" class="navbar-logo">TOKOSEPEDA<span>UAD</span></a>
-
       <div class="navbar-nav">
         <a href="file:///C:/Users/asus/Documents/VSCODE/project%20web/SEPEDA%20BEKAS%20UAD/home.html">HOME</a>
         <a href="#menu"style="text-decoration: underline;">SEPEDA BEKAS</a>
-        <a href="#about">ABOUT US</a>
+        <a href="file:///C:/Users/asus/Documents/VSCODE/project%20web/SEPEDA%20BEKAS%20UAD/about_us.html">ABOUT US</a>
         <a href="https://www.example.com/login" style="position: relative; color: #ffffff; text-decoration: none; display: inline-block; padding: 0 10px;">
           Login
           <span style="position: absolute; top: 0%; width: 2px; height: 20px; background-color: #ffffff; left: -10px;"></span>
@@ -46,12 +47,14 @@
       <h2>Sepeda Popular</h2>
       <ul>
           <li><a href="#promo" class="active">Promo</a></li>
-          <li><a href="#">BMX</a></li>
-          <li><a href="#">Sepeda Lipat</a></li>
-          <li><a href="#">Speda unik</a></li>
-          <li><a href="#">Sepeda Gunung</a></li>
+          <li><a href="#BMX">BMX</a></li>
+          <li><a href="#lipat">LIPAT</a></li>
+          <li><a href="#gunung">GUNUNG</a></li>
       </ul>
-    <section class="menu" id="promo">
+<div class="label">
+    Promo%
+</div>
+<section class="menu" id="promo">
       <!--Batas-->
       <div class="item">
           <div class="badge">new</div>
@@ -66,235 +69,411 @@
                       favorite
                       </span>
               </a>
-              <a href="#" title="Lihat gambar">
+              <a href="#" title="Lihat gambar" class="zoom-button">
                   <span class="material-icons">
                       visibility
                       </span>
               </a>
           </nav>
           <div class ="foto">
-              <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
+              <img src="gambar/sepeda bekas/promo1.webp" alt="sepeda bmx" class="zoomable"/>
               </div>
-                  <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                  <div class="nama">Pacific bmx</div>
+                  <div class="keterangan">Sepeda Gunung Promo</div>
+                  <div class="nama">Pacific</div>
                   <div class="harga">
-                       Harga : <span class="merah"> Rp.750.000</span> / 
-                      <span class="coret">Rp.1.000.000</span>
+                       Harga : <span class="merah"> Rp.999.000</span> / 
+                      <span class="coret">Rp.1.500.000</span>
                </div>
           </div>
           <!--Batas-->
           <div class="item">
-              <div class="badge">new</div>
-              <nav>
-                  <a href="#" title="Checkout Mase">
-                      <span class="material-icons">
-                          shopping_basket
+            <div class="badge">new</div>
+            <nav>
+                <a href="#" title="Checkout Mase">
+                    <span class="material-icons">
+                        shopping_basket
+                      </span>
+                </a>
+                <a href="#" title="Tambahkan favorite">
+                    <span class="material-icons">
+                        favorite
                         </span>
-                  </a>
-                  <a href="#" title="Tambahkan favorite">
-                      <span class="material-icons">
-                          favorite
+                </a>
+                <a href="#" title="Lihat gambar" class="zoom-button">
+                    <span class="material-icons">
+                        visibility
+                        </span>
+                </a>
+            </nav>
+            <div class ="foto">
+                <img src="gambar/sepeda bekas/promo2.webp" alt="sepeda bmx" class="zoomable"/>
+                </div>
+                    <div class="keterangan">Sepeda Gunung Promo</div>
+                    <div class="nama">family bmx</div>
+                    <div class="harga">
+                         Harga : <span class="merah"> Rp.999.000</span> / 
+                        <span class="coret">Rp.1.999.000</span>
+                 </div>
+            </div>
+            <!--Batas-->
+            <div class="item">
+                <div class="badge">new</div>
+                <nav>
+                    <a href="#" title="Checkout Mase">
+                        <span class="material-icons">
+                            shopping_basket
                           </span>
-                  </a>
-                  <a href="#" title="Lihat gambar">
-                      <span class="material-icons">
-                          visibility
-                          </span>
-                  </a>
-              </nav>
-              <div class ="foto">
-                  <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                  </div>
-                      <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                      <div class="nama">Pacific bmx</div>
-                      <div class="harga">
-                           Harga : <span class="merah"> Rp.750.000</span> / 
-                          <span class="coret">Rp.1.000.000</span>
-                   </div>
-              </div>
-              <!--Batas-->
-              <div class="item">
-                  <div class="badge">new</div>
-                  <nav>
-                      <a href="#" title="Checkout Mase">
-                          <span class="material-icons">
-                              shopping_basket
+                    </a>
+                    <a href="#" title="Tambahkan favorite">
+                        <span class="material-icons">
+                            favorite
                             </span>
-                      </a>
-                      <a href="#" title="Tambahkan favorite">
-                          <span class="material-icons">
-                              favorite
-                              </span>
-                      </a>
-                      <a href="#" title="Lihat gambar">
-                          <span class="material-icons">
-                              visibility
-                              </span>
-                      </a>
-                  </nav>
-                  <div class ="foto">
-                      <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                      </div>
-                          <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                          <div class="nama">Pacific bmx</div>
-                          <div class="harga">
-                               Harga : <span class="merah"> Rp.750.000</span> / 
-                              <span class="coret">Rp.1.000.000</span>
-                       </div>
-                  </div>
-                  <!--Batas-->
-                  <div class="item">
-                      <div class="badge">new</div>
-                      <nav>
-                          <a href="#" title="Checkout Mase">
-                              <span class="material-icons">
-                                  shopping_basket
-                                </span>
-                          </a>
-                          <a href="#" title="Tambahkan favorite">
-                              <span class="material-icons">
-                                  favorite
-                                  </span>
-                          </a>
-                          <a href="#" title="Lihat gambar">
-                              <span class="material-icons">
-                                  visibility
-                                  </span>
-                          </a>
-                      </nav>
-                      <div class ="foto">
-                          <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                          </div>
-                              <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                              <div class="nama">Pacific bmx</div>
-                              <div class="harga">
-                                   Harga : <span class="merah"> Rp.750.000</span> / 
-                                  <span class="coret">Rp.1.000.000</span>
-                           </div>
-                      </div>
-                      <!--Batas-->
-                      <div class="item">
-                        <div class="badge">new</div>
-                        <nav>
-                            <a href="#" title="Checkout Mase">
-                                <span class="material-icons">
-                                    shopping_basket
-                                  </span>
-                            </a>
-                            <a href="#" title="Tambahkan favorite">
-                                <span class="material-icons">
-                                    favorite
-                                    </span>
-                            </a>
-                            <a href="#" title="Lihat gambar">
-                                <span class="material-icons">
-                                    visibility
-                                    </span>
-                            </a>
-                        </nav>
-                        <div class ="foto">
-                            <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                            </div>
-                                <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                                <div class="nama">Pacific bmx</div>
-                                <div class="harga">
-                                     Harga : <span class="merah"> Rp.750.000</span> / 
-                                    <span class="coret">Rp.1.000.000</span>
-                             </div>
-                        </div>
-                        <!--Batas-->
-                        <div class="item">
-                          <div class="badge">new</div>
-                          <nav>
-                              <a href="#" title="Checkout Mase">
-                                  <span class="material-icons">
-                                      shopping_basket
-                                    </span>
-                              </a>
-                              <a href="#" title="Tambahkan favorite">
-                                  <span class="material-icons">
-                                      favorite
-                                      </span>
-                              </a>
-                              <a href="#" title="Lihat gambar">
-                                  <span class="material-icons">
-                                      visibility
-                                      </span>
-                              </a>
-                          </nav>
-                          <div class ="foto">
-                              <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                              </div>
-                                  <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                                  <div class="nama">Pacific bmx</div>
-                                  <div class="harga">
-                                       Harga : <span class="merah"> Rp.750.000</span> / 
-                                      <span class="coret">Rp.1.000.000</span>
-                               </div>
-                          </div>
-                          <!--Batas-->
-                          <div class="item">
-                            <div class="badge">new</div>
-                            <nav>
-                                <a href="#" title="Checkout Mase">
-                                    <span class="material-icons">
-                                        shopping_basket
-                                      </span>
-                                </a>
-                                <a href="#" title="Tambahkan favorite">
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                </a>
-                                <a href="#" title="Lihat gambar">
-                                    <span class="material-icons">
-                                        visibility
-                                        </span>
-                                </a>
-                            </nav>
-                            <div class ="foto">
-                                <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                                </div>
-                                    <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                                    <div class="nama">Pacific bmx</div>
-                                    <div class="harga">
-                                         Harga : <span class="merah"> Rp.750.000</span> / 
-                                        <span class="coret">Rp.1.000.000</span>
-                                 </div>
-                            </div>
-                            <!--Batas-->
-                            <div class="item">
-                              <div class="badge">new</div>
-                              <nav>
-                                  <a href="#" title="Checkout Mase">
-                                      <span class="material-icons">
-                                          shopping_basket
-                                        </span>
-                                  </a>
-                                  <a href="#" title="Tambahkan favorite">
-                                      <span class="material-icons">
-                                          favorite
-                                          </span>
-                                  </a>
-                                  <a href="#" title="Lihat gambar">
-                                      <span class="material-icons">
-                                          visibility
-                                          </span>
-                                  </a>
-                              </nav>
-                              <div class ="foto">
-                                  <img src="gambar/sepeda bmx.jpeg" alt="sepeda bmx"/>
-                                  </div>
-                                      <div class="keterangan">Sepeda BMX Murah Bekas</div>
-                                      <div class="nama">Pacific bmx</div>
-                                      <div class="harga">
-                                           Harga : <span class="merah"> Rp.750.000</span> / 
-                                          <span class="coret">Rp.1.000.000</span>
-                                   </div>
-                              </div>
-                              <!--Batas-->
-          
-  </section>
+                    </a>
+                    <a href="#" title="Lihat gambar" class="zoom-button">
+                        <span class="material-icons">
+                            visibility
+                            </span>
+                    </a>
+                </nav>
+                <div class ="foto">
+                    <img src="gambar/sepeda bekas/promo3.jpeg" alt="sepeda bmx" class="zoomable"/>
+                    </div>
+                        <div class="keterangan">Sepeda BMX Murah Bekas</div>
+                        <div class="nama">Pacific bmx</div>
+                        <div class="harga">
+                             Harga : <span class="merah"> Rp.750.000</span> / 
+                            <span class="coret">Rp.1.000.000</span>
+                     </div>
+                </div>
+                <!--Batas-->
+</section>
+<div class="label" id="BMX">
+    BMX
+</div>
+<section class="menu" >
+    <!--Batas-->
+    <div class="item">
+        <div class="badge">new</div>
+        <nav>
+            <a href="#" title="Checkout Mase">
+                <span class="material-icons">
+                    shopping_basket
+                  </span>
+            </a>
+            <a href="#" title="Tambahkan favorite">
+                <span class="material-icons">
+                    favorite
+                    </span>
+            </a>
+            <a href="#" title="Lihat gambar" class="zoom-button">
+                <span class="material-icons">
+                    visibility
+                    </span>
+            </a>
+        </nav>
+        <div class ="foto">
+            <img src="gambar/sepeda bekas/bmx1.jpg" alt="sepeda bmx" class="zoomable"/>
+            </div>
+                <div class="keterangan">Sepeda BMX Murah Bekas</div>
+                <div class="nama">Mongoose L40</div>
+                <div class="harga">
+                     Harga : <span> Rp.999.000</span> 
+             </div>
+        </div>
+        <!--Batas-->
+        <div class="item">
+            <div class="badge">new</div>
+            <nav>
+                <a href="#" title="Checkout Mase">
+                    <span class="material-icons">
+                        shopping_basket
+                      </span>
+                </a>
+                <a href="#" title="Tambahkan favorite">
+                    <span class="material-icons">
+                        favorite
+                        </span>
+                </a>
+                <a href="#" title="Lihat gambar" class="zoom-button">
+                    <span class="material-icons">
+                        visibility
+                        </span>
+                </a>
+            </nav>
+            <div class ="foto">
+                <img src="gambar/sepeda bekas/bmx2.jpg" alt="sepeda bmx" class="zoomable"/>
+                </div>
+                    <div class="keterangan">Sepeda BMX Murah Bekas</div>
+                    <div class="nama">Pacific bmx</div>
+                    <div class="harga">
+                         Harga : <span> Rp.750.000</span> 
+                 </div>
+            </div>
+            <!--Batas-->
+            <div class="item">
+                <div class="badge">new</div>
+                <nav>
+                    <a href="#" title="Checkout Mase">
+                        <span class="material-icons">
+                            shopping_basket
+                          </span>
+                    </a>
+                    <a href="#" title="Tambahkan favorite">
+                        <span class="material-icons">
+                            favorite
+                            </span>
+                    </a>
+                    <a href="#" title="Lihat gambar" class="zoom-button">
+                        <span class="material-icons">
+                            visibility
+                            </span>
+                    </a>
+                </nav>
+                <div class ="foto">
+                    <img src="gambar/sepeda bekas/bmx3.avif" alt="sepeda bmx" class="zoomable"/>
+                    </div>
+                        <div class="keterangan">Sepeda BMX Murah Bekas</div>
+                        <div class="nama">Freestyle 12T</div>
+                        <div class="harga">
+                             Harga : <span> Rp.850.000</span> 
+                     </div>
+                </div>
+                <!--Batas-->
+</section>
+<div class="label"  id="lipat">
+    Lipat
+</div>
+<section class="menu">
+    <!--Batas-->
+    <div class="item">
+        <div class="badge">new</div>
+        <nav>
+            <a href="#" title="Checkout Mase">
+                <span class="material-icons">
+                    shopping_basket
+                  </span>
+            </a>
+            <a href="#" title="Tambahkan favorite">
+                <span class="material-icons">
+                    favorite
+                    </span>
+            </a>
+            <a href="#" title="Lihat gambar" class="zoom-button">
+                <span class="material-icons">
+                    visibility
+                    </span>
+            </a>
+        </nav>
+        <div class ="foto">
+            <img src="gambar/sepeda bekas/lipat1.jpg" alt="sepeda bmx" class="zoomable"/>
+            </div>
+                <div class="keterangan">Sepeda Lipat Murah Bekas</div>
+                <div class="nama">Element Ecosmo Z9</div>
+                <div class="harga">
+                     Harga : <span> Rp.500.000</span> 
+             </div>
+        </div>
+        <!--Batas-->
+        <div class="item">
+            <div class="badge">new</div>
+            <nav>
+                <a href="#" title="Checkout Mase">
+                    <span class="material-icons">
+                        shopping_basket
+                      </span>
+                </a>
+                <a href="#" title="Tambahkan favorite">
+                    <span class="material-icons">
+                        favorite
+                        </span>
+                </a>
+                <a href="#" title="Lihat gambar" class="zoom-button">
+                    <span class="material-icons">
+                        visibility
+                        </span>
+                </a>
+            </nav>
+            <div class ="foto">
+                <img src="gambar/sepeda bekas/lipat2.jpg" alt="sepeda bmx" class="zoomable"/>
+                </div>
+                    <div class="keterangan">Sepeda Lipat Murah Bekas</div>
+                    <div class="nama">Pacific Noris 2.5</div>
+                    <div class="harga">
+                         Harga : <span> Rp.950.000</span> 
+                 </div>
+            </div>
+            <!--Batas-->
+            <div class="item">
+                <div class="badge">new</div>
+                <nav>
+                    <a href="#" title="Checkout Mase">
+                        <span class="material-icons">
+                            shopping_basket
+                          </span>
+                    </a>
+                    <a href="#" title="Tambahkan favorite">
+                        <span class="material-icons">
+                            favorite
+                            </span>
+                    </a>
+                    <a href="#" title="Lihat gambar" class="zoom-button">
+                        <span class="material-icons">
+                            visibility
+                            </span>
+                    </a>
+                </nav>
+                <div class ="foto">
+                    <img src="gambar/sepeda bekas/lipat3.jpg" alt="sepeda bmx" class="zoomable"/>
+                    </div>
+                        <div class="keterangan">Sepeda Lipat Murah Bekas</div>
+                        <div class="nama">Pacific Noris 2.1</div>
+                        <div class="harga">
+                             Harga : <span> Rp.750.000</span> 
+                     </div>
+                </div>
+                <!--Batas-->
+</section>
+<div class="label" id="gunung" style="margin-bottom: -27px;">
+   Gunung
+</div>
+<section class="menu" id="gunung">
+    <!--Batas-->
+    <div class="item">
+        <div class="badge">new</div>
+        <nav>
+            <a href="#" title="Checkout Mase">
+                <span class="material-icons">
+                    shopping_basket
+                  </span>
+            </a>
+            <a href="#" title="Tambahkan favorite">
+                <span class="material-icons">
+                    favorite
+                    </span>
+            </a>
+            <a href="#" title="Lihat gambar" class="zoom-button">
+                <span class="material-icons">
+                    visibility
+                    </span>
+            </a>
+        </nav>
+        <div class ="foto">
+            <img src="gambar/sepeda bekas/gunung1.jpg" alt="sepeda bmx" class="zoomable"/>
+            </div>
+                <div class="keterangan">Sepeda Gunung Bekas</div>
+                <div class="nama">Trex XT-780</div>
+                <div class="harga">
+                     Harga : <span> Rp.1.750.000</span>
+             </div>
+        </div>
+        <!--Batas-->
+        <div class="item">
+            <div class="badge">new</div>
+            <nav>
+                <a href="#" title="Checkout Mase">
+                    <span class="material-icons">
+                        shopping_basket
+                      </span>
+                </a>
+                <a href="#" title="Tambahkan favorite">
+                    <span class="material-icons">
+                        favorite
+                        </span>
+                </a>
+                <a href="#" title="Lihat gambar" class="zoom-button">
+                    <span class="material-icons">
+                        visibility
+                        </span>
+                </a>
+            </nav>
+            <div class ="foto">
+                <img src="gambar/sepeda bekas/gunung2.jpg" alt="sepeda bmx" class="zoomable"/>
+                </div>
+                    <div class="keterangan">Sepeda Gunung Bekas</div>
+                    <div class="nama">Storm Shark 3.0</div>
+                    <div class="harga">
+                         Harga : <span> Rp.1.500.000</span>
+                 </div>
+            </div>
+            <!--Batas-->
+            <div class="item">
+                <div class="badge">new</div>
+                <nav>
+                    <a href="#" title="Checkout Mase">
+                        <span class="material-icons">
+                            shopping_basket
+                          </span>
+                    </a>
+                    <a href="#" title="Tambahkan favorite">
+                        <span class="material-icons">
+                            favorite
+                            </span>
+                    </a>
+                    <a href="#" title="Lihat gambar" class="zoom-button">
+                        <span class="material-icons">
+                            visibility
+                            </span>
+                    </a>
+                </nav>
+                <div class ="foto">
+                    <img src="gambar/sepeda bekas/gunung3.jpg" alt="sepeda bmx" class="zoomable"/>
+                    </div>
+                        <div class="keterangan">Sepeda Gunung Bekas</div>
+                        <div class="nama">Aviator 2689 XT VT</div>
+                        <div class="harga">
+                             Harga : <span> Rp.2.000.000</span>
+                     </div>
+                </div>
+                <!--Batas-->
+</section>
+  <div class="zoom-overlay" id="zoomOverlay">
+    <img src="" alt="Gambar Zoom" id="zoomImage"/>
+</div>
     <script src="js/script.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+        const zoomButtons = document.querySelectorAll('.zoom-button');
+        const zoomOverlay = document.getElementById('zoomOverlay');
+        const zoomImage = document.getElementById('zoomImage');
+
+        zoomButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Mencegah aksi default
+                const img = button.closest('.item').querySelector('.zoomable');
+                zoomImage.src = img.src; // Setel sumber gambar
+                zoomOverlay.classList.add('active');
+            });
+        });
+
+        zoomOverlay.addEventListener('click', function() {
+            zoomOverlay.classList.remove('active');
+        });
+      });
+    </script>
   </body>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Tentang Kami</h3>
+            <p>Toko Sepeda Bekas UAD adalah pusat jual beli sepeda bekas dengan kualitas terbaik.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Hubungi Kami</h3>
+            <div class="social-icons" >
+              <a href="https://www.instagram.com/ahimze"><i class="fab fa-instagram"></i>ahimze</a>
+              <a href="https://www.instagram.com/renosaputra3030"><i class="fab fa-instagram"></i>reno</a>
+              <a href="https://www.instagram.com/eprudnt14r"><i class="fab fa-instagram"></i>shellgy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Toko Sepeda Bekas UAD. All rights reserved.</p>
+    </div>
+</footer>
 </html>
